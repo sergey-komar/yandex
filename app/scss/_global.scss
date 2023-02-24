@@ -24,15 +24,58 @@ body > * {
 button{
 	cursor: pointer;
 }
+.container-header{
+	max-width: 123rem;
+	margin: 0 auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
 .container{
 	max-width: 120rem;
 	margin: 0 auto;
 	padding-left: 1.5rem;
 	padding-right: 1.5rem;
 }
-.container-heading{
-	max-width: 117rem;
-	margin: 0 auto;
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
+.title{
+	margin-bottom: 4.5rem;
+	padding: 2rem 4rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+    text-align: center;
+    background: #FFFFFF;
+    border: 5px solid #F8CC48;
+    border-radius: 20px;
+	text-align: left;
+}
+.title span{
+	color: #6D9BE2;
+}
+.btn__link{
+	position: relative;
+    display: block;
+    width: 100%;
+    height: 8.6rem;
+    background: #EB4640;
+    border: 1px solid #F5CE00;
+    border-radius: 10px;
+    color: $white;
+    font-weight: 700;
+    line-height: 8.6rem;
+    text-align: center;
+    font-size: 2rem;
+    transition: all .5s ease;
+}
+.btn__link::before{
+	position: absolute;
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    background: url('../images/home/cases/cases-link.svg') no-repeat;
+    top: 38%;
+    left: 33%;
+}
+.btn__link:hover{
+	background: #1F3962;
+    transition: all .5s ease;
 }
