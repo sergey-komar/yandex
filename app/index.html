@@ -24,25 +24,28 @@
       <div class="header-bottom">
         <div class="container-header">
           <div class="header-bottom__inner">
+            <div class="nav-icon">
+              <div class="nav-icon__middle"></div>
+            </div>
             <nav class="menu">
               <ul class="menu__list">
-                 <li class="active">
+                 <li class="">
                   <a href="#"> Реклама в Яндекс.Директе</a>
                 </li>
                 <li>
-                  <a href="#">Тарифы</a>
+                  <a href="#rates">Тарифы</a>
                 </li>
                 <li>
-                  <a href="#">Кейсы</a>
+                  <a href="#cases">Кейсы</a>
                 </li>
                 <li>
-                  <a href="#">Отзывы</a>
+                  <a href="#clients">Отзывы</a>
                 </li>
                 <li>
-                  <a href="#">Гарантии</a>
+                  <a href="#guarantees">Гарантии</a>
                 </li>
                 <li>
-                  <a href="#">Как настроить рекламу?</a>
+                  <a href="#work">Как настроить рекламу?</a>
                 </li>
               </ul>
             </nav>
@@ -58,7 +61,7 @@
 
             <div class="header-bottom__contact">
               <a href="tel:+79588311636" class="header-bottom__contact-phone">+7 (958) 831-16-36</a>
-              <button class="header-bottom__contact-btn">Обратный звонок</button>
+              <button data-modal class="header-bottom__contact-btn">Обратный звонок</button>
             </div>
           </div>
         </div>
@@ -66,7 +69,7 @@
     </div>
   </header>
   
-    <main class="main">
+     <main class="main">
       <div class="heading">
         <div class="container">
           <div class="heading__inner">
@@ -78,7 +81,7 @@
             <div class="heading__block">
               <div class="heading__content">
                 <div class="heading__content-text">Клиенты уже через 7 дней</div>
-                <button class="heading__content-btn">Рассчитать стоимость</button>
+                <button data-modal class="heading__content-btn">Рассчитать стоимость</button>
                 <div class="heading__content-social">
                   <p class="heading__content-social-text">Ответим на ваши вопросы:</p>
                   <a href="#" class="heading__content-social-icon">
@@ -398,7 +401,7 @@
           </div>
         </div>
 
-        <div class="work">
+        <div id="work" class="work">
           <div class="container">
             <h2 class="work__title title">Как я работаю</h2>
             <div class="work__block">
@@ -560,7 +563,7 @@
         </div>
 
 
-        <div class="cases">
+        <div id="cases" class="cases">
           <div class="container">
             <h2 class="cases__title title">
               Последние кейсы
@@ -721,7 +724,7 @@
               </div>
             </div>
 
-            <a href="#" class="case__btn btn__link">Перейти на страницу всех кейсов</a>
+            <a href="./articles.html" class="case__btn btn__link">Перейти на страницу всех кейсов</a>
           </div>
         </div>
 
@@ -786,7 +789,7 @@
           </div>
         </div>
 
-        <div class="clients">
+        <div id="clients" class="clients">
           <div class="container">
             <h2 class="clients__title title">
               Что говорят клиенты
@@ -814,6 +817,8 @@
                 </div>
               </div>
             </div>
+
+          
 
             <div class="video-reviews">
               <div class="video-reviews__title">Видеоотзывы</div>
@@ -847,12 +852,75 @@
               </div>
             </div>
 
-            <a href="#" class="clients__btn btn__link">Перейти на страницу всех отзывов</a>
+           
+
+            <a href="./page.html" class="clients__btn btn__link">Перейти на страницу всех отзывов</a>
           </div>
         </div>
 
+        <div class="clients-slider">
+          <div class="container">
+            <div class="clients-slider__block">
+              <div class="clients-block__item-slider">
+                <div class="clients-block__item-img-slider">
+                  <img src="./images/home/clients/clients-4.jpg" alt="img">
+                </div>
+              </div>
+              <div class="clients-block__item-slider">
+                <div class="clients-block__item-img clients-block__item-img-slider">
+                  <img src="./images/home/clients/clients-4.jpg" alt="img">
+                </div>
+              </div>
+              <div class="clients-block__item-slider">
+                <div class="clients-block__item-img-slider">
+                  <img src="./images/home/clients/clients-4.jpg" alt="img">
+                </div>
+              </div>
+              <div class="clients-block__item-slider">
+                <div class="clients-block__item-img-slider">
+                  <img src="./images/home/clients/clients-4.jpg" alt="img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-        <div class="rates">
+        <div class="video-slider">
+          <div class="container">
+            <div class="video-slider__block">
+              <div class="video-reviews__item-slider">
+                <div class="video-reviews__item-img-slider">
+                  <img src="./images/home/clients/clients-play-2.png" alt="img">
+                </div>
+                <a href="#" class="video-reviews__item-btn">
+                  <img src="./images/home/clients/clients-btn.svg" alt="img">
+                </a>
+              </div>
+              <div class="video-reviews__item-slider">
+                <div class="video-reviews__item-img-slider">
+                  <img src="./images/home/clients/clients-play-2.png" alt="img">
+                </div>
+                <a href="#" class="video-reviews__item-btn">
+                  <img src="./images/home/clients/clients-btn.svg" alt="img">
+                </a>
+              </div>
+              <div class="video-reviews__item-slider">
+                <div class="video-reviews__item-img-slider">
+                  <img src="./images/home/clients/clients-play-2.png" alt="img">
+                </div>
+                <a href="#" class="video-reviews__item-btn">
+                  <img src="./images/home/clients/clients-btn.svg" alt="img">
+                </a>
+              </div>
+            </div>
+            <a href="#" class="clients__btn btn__link">Перейти на страницу всех отзывов</a>
+          </div>
+        </div>
+      
+       
+       
+
+        <div id="rates" class="rates">
           <div class="container">
             <h2 class="rates__title title">Тарифы</h2>
             <div class="rates-block">
@@ -958,6 +1026,121 @@
           </div>
         </div>
 
+        <div class="rates-slider">
+          <div class="container">
+            <div class="rates-slider__block">
+
+              <div class="rates-slider__wrapper">
+                <div class="rates-block__item one">
+                  <div class="rates-block__item-img">
+                    <img src="./images/home/rates-1.svg" alt="img">
+                  </div>
+                  <div class="rates-block__item-title">Стандарт</div>
+                  <div class="rates-block__item-subtitle">подходит для лендингов</div>
+                  <div class="rates-block__item-price">29 990 р.</div>
+                  <p class="rates-block__item-text">1 час</p>
+                  <p class="rates-block__item-desc">Консультация по маркетингу</p>
+                  <p class="rates-block__item-text">5 конкурентов Я.Директ</p>
+                  <p class="rates-block__item-desc">Маркетинговое исследование</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Рекомендации по сайту</p>
+                  <p class="rates-block__item-text">Поиск / РСЯ / Мастер кампаний/Ретаргет</p>
+                  <p class="rates-block__item-desc">Виды рекламных кампаний</p>
+                  <p class="rates-block__item-text">7 дней</p>
+                  <p class="rates-block__item-desc">Срок настройки</p>
+                  <p class="rates-block__item-text">1 месяц после запуска</p>
+                  <p class="rates-block__item-desc">Ведение кампаний</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Ретаргетинг</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Яндекс визитка / Быстрые ссылки</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Уточнения / Отображаемая ссылка</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">UTM-метки</p>
+                  <p class="rates-block__item-text">РФ</p>
+                  <p class="rates-block__item-desc">Отдельные кампании для регионов</p>
+  
+                  <a href="#" class="rates-block__item-btn">заказать</a>
+                </div>
+              </div>
+
+              <div class="rates-slider__wrapper">
+                <div class="rates-block__item two">
+                  <div class="rates-block__item-img">
+                    <img src="./images/home/rates-2.svg" alt="img">
+                  </div>
+                  <div class="rates-block__item-title">Оптимальный</div>
+                  <div class="rates-block__item-subtitle">подходит для многостраничных сайтов</div>
+                  <div class="rates-block__item-price">34 990 р.</div>
+                  <p class="rates-block__item-text">3 часа</p>
+                  <p class="rates-block__item-desc">Консультация по маркетингу</p>
+                  <p class="rates-block__item-text">10 конкурентов Я.Директ</p>
+                  <p class="rates-block__item-desc">Маркетинговое исследование</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Рекомендации по сайту</p>
+                  <p class="rates-block__item-text">Поиск / РСЯ / Мастер кампаний/Ретаргет</p>
+                  <p class="rates-block__item-desc">Виды рекламных кампаний</p>
+                  <p class="rates-block__item-text">7-10 дней</p>
+                  <p class="rates-block__item-desc">Срок настройки</p>
+                  <p class="rates-block__item-text">1 месяц после запуска</p>
+                  <p class="rates-block__item-desc">Ведение кампаний</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Ретаргетинг</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Яндекс визитка / Быстрые ссылки</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Уточнения / Отображаемая ссылка</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">UTM-метки</p>
+                  <p class="rates-block__item-text">Москва / СПб / РФ</p>
+                  <p class="rates-block__item-desc">Отдельные кампании для регионов</p>
+  
+                  <a href="#" class="rates-block__item-btn">заказать</a>
+                </div>
+              </div>
+             
+
+              <div class="rates-slider__wrapper">
+                <div class="rates-block__item three">
+                  <div class="rates-block__item-img">
+                    <img src="./images/home/rates-3.svg" alt="img">
+                  </div>
+                  <div class="rates-block__item-title">Эксклюзивный</div>
+                  <div class="rates-block__item-subtitle">подходит для интернет-магазинов</div>
+                  <div class="rates-block__item-price">49 990 р.</div>
+                  <p class="rates-block__item-text">6 часов</p>
+                  <p class="rates-block__item-desc">Консультация по маркетингу</p>
+                  <p class="rates-block__item-text">Всех конкурентов Я.Директ</p>
+                  <p class="rates-block__item-desc">Маркетинговое исследование</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Рекомендации по сайту</p>
+                  <p class="rates-block__item-text">Поиск / РСЯ / Мастер кампаний/Ретаргет/ Смарт-баннеры/Динамические объявления</p>
+                  <p class="rates-block__item-desc">Виды рекламных кампаний</p>
+                  <p class="rates-block__item-text">10 дней</p>
+                  <p class="rates-block__item-desc">Срок настройки</p>
+                  <p class="rates-block__item-text">1 месяц после запуска</p>
+                  <p class="rates-block__item-desc">Ведение кампаний</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Ретаргетинг</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Яндекс визитка / Быстрые ссылки</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">Уточнения / Отображаемая ссылка</p>
+                  <p class="rates-block__item-text">Да</p>
+                  <p class="rates-block__item-desc">UTM-метки</p>
+                  <p class="rates-block__item-text">Отдельные кампании для регионов</p>
+                  <p class="rates-block__item-desc">Отдельные кампании для регионов</p>
+  
+                  <a href="#" class="rates-block__item-btn">заказать</a>
+                </div>
+              </div>
+             
+
+            </div>
+          </div>
+        </div>
+
 
         <div class="announcement">
           <div class="container">
@@ -1050,7 +1233,7 @@
         </div>
 
 
-        <div class="guarantees">
+        <div id="guarantees" class="guarantees">
           <div class="container">
             <h2 class="guarantees__title title">
               Гарантии на мои услуги
@@ -1136,6 +1319,70 @@
           </div>
         </div>
 
+        <div class="accardion">
+          <div class="container">
+            <h2 class="accardion__title title">Вопросы и ответы</h2>
+
+            <div class="accardion__block">
+              <div class="accardion__item">
+                  <div class="accardion__item-title">
+                    На чьем аккаунте вы настраиваете рекламу?
+                  </div>
+                <div class="accardion__item-text">
+                    <div class="accardion__item-content">
+                      Я настраиваю рекламу на ваших аккаунтах. Мне интереснее работать над вашими рекламными кампаниями за фиксированные деньги с вами, а не получать % от вашего бюджета на рекламу, который агентства пытаются искусственно раздуть.
+                    </div>
+                </div>
+              </div>
+
+              <div class="accardion__item">
+                  <div class="accardion__item-title">
+                    Вы работаете без предоплаты?
+                  </div>
+                <div class="accardion__item-text">
+                    <div class="accardion__item-content">
+                      Я настраиваю рекламу на ваших аккаунтах. Мне интереснее работать над вашими рекламными кампаниями за фиксированные деньги с вами, а не получать % от вашего бюджета на рекламу, который агентства пытаются искусственно раздуть.
+                    </div>
+                </div>
+              </div>
+
+              <div class="accardion__item">
+                <div class="accardion__item-title">
+                  Какой нужен бюджет и сколько заявок я получу?
+                </div>
+              <div class="accardion__item-text">
+                  <div class="accardion__item-content">
+                    Я настраиваю рекламу на ваших аккаунтах. Мне интереснее работать над вашими рекламными кампаниями за фиксированные деньги с вами, а не получать % от вашего бюджета на рекламу, который агентства пытаются искусственно раздуть.
+                  </div>
+              </div>
+            </div>
+
+            <div class="accardion__item">
+              <div class="accardion__item-title">
+                Как вы работаете с юр.лицами: договор/оплата/закрывающие документы?
+              </div>
+            <div class="accardion__item-text">
+                <div class="accardion__item-content">
+                  Я настраиваю рекламу на ваших аккаунтах. Мне интереснее работать над вашими рекламными кампаниями за фиксированные деньги с вами, а не получать % от вашего бюджета на рекламу, который агентства пытаются искусственно раздуть.
+                </div>
+            </div>
+          </div>
+
+          <div class="accardion__item">
+            <div class="accardion__item-title">
+              В каком виде и с какой частотой вы предоставляете отчеты?
+            </div>
+          <div class="accardion__item-text">
+              <div class="accardion__item-content">
+                Я настраиваю рекламу на ваших аккаунтах. Мне интереснее работать над вашими рекламными кампаниями за фиксированные деньги с вами, а не получать % от вашего бюджета на рекламу, который агентства пытаются искусственно раздуть.
+              </div>
+          </div>
+        </div>
+            </div>
+          </div>
+         
+      </div>
+
 
         <div class="advertising">
           <div class="container">
@@ -1177,24 +1424,27 @@
           </div>
         </div>
     </main>
+   
     <footer class="footer">
       <div class="container">
         <div class="footer-block">
 
-          <div class="footer__logo">
-            <div class="footer-block__box">
-              <a href="#" class="footer-block__box-logo">
-                <img src="./images/home/icon/footer-logo.svg" alt="img">
-              </a>
-              <p class="footer-block__box-text">
-                Сертифицированный специалист по Яндекс.Директ и ВКонтакте — Мирослав Дикань
-              </p>
+          <div class="footer__logo-wrapper">
+            <div class="footer__logo">
+              <div class="footer-block__box">
+                <a href="#" class="footer-block__box-logo">
+                  <img src="./images/home/icon/footer-logo.svg" alt="img">
+                </a>
+                <p class="footer-block__box-text">
+                  Сертифицированный специалист по Яндекс.Директ и ВКонтакте — Мирослав Дикань
+                </p>
+              </div>
+  
+              <p class="footer__logo-text">Политика конфиденциальности</p>
             </div>
-
-            <p class="footer__logo-text">Политика конфиденциальности</p>
           </div>
          
-
+         <div class="footer-block__item-wrapper">
           <div class="footer-block__item">
             <div class="footer-block__item-title">Контакты</div>
             <p class="footer-block__item-text">г. Москва</p>
@@ -1243,6 +1493,9 @@
               </li>
             </ul>
           </div>
+         </div>
+
+         
         </div>
 
         <p class="footer__copyright">
@@ -1250,10 +1503,39 @@
         </p>
       </div>
     </footer>
+  
+
+<div class="modal">
+  <div class="container">
+    <div class="modal__inner">
+      <div class="modal__title">Вас заинтересовал тариф №2 «Оптимальный»?</div>
+      <p class="modal__text">
+        Рекомендовано тем, у кого есть бюджет и нужно как можно больше клиентов и тестов на рекламу
+      </p>
+      <div class="modal__input-text">
+        Оставьте ваш телефон для связи
+      </div>
+      <input  id="input-mask2" type="text" class="modal__input" placeholder="+{7}(000)000-00-00">
+      <div class="modal__select-text">
+        Как будет удобнее связаться с вами?
+      </div>
+      <select  class="modal__select">
+        <option class="modal__option">Напишите в WhatsApp</option>
+        <option class="modal__option">Напишите в Telegram</option>
+        <option class="modal__option">Напишите в VK</option>
+      </select>
+
+      <button class="modal__btn">Свяжитесь со мной</button>
+      <p class="modal__policy">
+        Нажимая на кнопку, Вы соглашаетесь <span>с политикой конфиденциальности</span> 
+      </p>
+      <div data-close class="modal__close">&times;</div> 
+    </div>
+  </div>
  
+</div>
 
-
-
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/main.min.js"></script>
 </body>
 

@@ -584,6 +584,12 @@ li.slick-active button{
     border: 1px solid #D6D6D6;
     border-radius: 20px;
 }
+.clients-slider{
+    display: none;
+}
+.video-slider{
+    display: none;
+}
 .video-reviews__title {
     margin-bottom: 3rem;
     font-weight: 600;
@@ -704,6 +710,9 @@ li.slick-active button{
     border: 1px solid #D6D6D6;
     border-radius: 20px;
 }
+.rates-slider{
+    display: none;
+}
 
 
 
@@ -715,6 +724,7 @@ li.slick-active button{
 .announcement__block {
     background: url('../images/home/announcement-bg.jpg') no-repeat;
     background-size: cover;
+    border-radius: 20px;
 }
 .announcement__inner {
     padding-top: 5.5rem;
@@ -955,3 +965,50 @@ li.slick-active button{
 .vk::after{
     background: url('../images/home/icon/vk-icon.svg') no-repeat;
 }
+
+
+
+//ACCARDION
+.accardion {
+    padding-bottom: 10rem;
+}
+.accardion__item {
+    padding: 3rem 6rem 3rem 6rem;
+    margin-bottom: 2rem;
+    background: #FFFFFF;
+    border: 1px solid #D6D6D6;
+    border-radius: 20px;
+}
+.accardion__item-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.accardion__item-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+}
+.accardion__item-title::after{
+    position: absolute;
+    content: '';
+    width: 8rem;
+    height: 8rem;
+    background: url('../images/home/button-down.jpg') no-repeat;
+    right: -40px;
+    top: -7px;
+    transition: transform .5s ease-in;
+}
+.accardion__item-text {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease-out;
+    padding-top: 2rem;
+    font-weight: 300;
+    line-height: 2.4rem;
+}
+.accardion__item-title.open::after {
+    transform: rotate(180deg);
+    transition: transform .5s ease-in;
+  }
