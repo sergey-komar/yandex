@@ -76,6 +76,8 @@ $(function () {
 
 });
 
+
+//HIDE BLOCK
 const articlesItem = document.querySelectorAll('.articles-block__item');
 const articlesBtn = document.querySelector('.articles-block__btn');
 if( articlesBtn){
@@ -89,7 +91,7 @@ if( articlesBtn){
     
 }
 
-
+//MENU
     const menu = document.querySelector('.menu');
     const mobile = document.querySelector('.nav-icon');
 
@@ -107,6 +109,8 @@ if( articlesBtn){
         })
       })
 
+
+      //ACCARDION
 const accordionItemHeaders = document.querySelectorAll(".accardion__item-title");
 
 accordionItemHeaders.forEach(acc => {
@@ -124,15 +128,19 @@ accordionItemHeaders.forEach(acc => {
 });
 
 
+
 var element2 = document.getElementById('input-mask2');
 
 var maskOptions = {
-	mask: '+{7}(000)000-00-00'
+	mask: '+{7}(000)000-00-00',
 };
+
 
 var mask2 = IMask(element2, maskOptions);
 
 
+
+//MODAL
 const modalBtn = document.querySelectorAll('[data-modal]');
 const modal = document.querySelector('.modal');
 const modalCloseBtn = document.querySelector('[data-close]');
@@ -187,6 +195,50 @@ function calcScroll(){
     
     return scrollWidth;
     }
+
+//TABS
+
+const tabsItem = document.querySelector('.announcement-tabs__item');
+const tabsItemBtn = document.querySelectorAll('.announcement-tabs__item-btn');
+const tabsContent = document.querySelectorAll('.announcement-tabs__content');
+
+function tabsHide(){
+    tabsContent.forEach(item => {
+        item.classList.add('hide');
+        item.classList.remove('.articles-show');
+    });
+
+    tabsItemBtn.forEach(btn =>{
+        btn.classList.remove('tabs-active');
+    })
+}
+
+
+function tabsShow(i){
+    tabsContent[i].classList.add('.articles-show');
+    tabsContent[i].classList.remove('hide');
+    tabsItemBtn[i].classList.add('tabs-active');
+}
+
+
+
+tabsItem.addEventListener('click', (e) => {
+    const target = e.target;
+    
+    if(target && target.classList.contains('announcement-tabs__item-btn')){
+        tabsItemBtn.forEach((item, i)=>{
+            if(target == item){
+                tabsHide();
+                tabsShow(i);
+            }
+           
+        })
+       
+    }
+})
+
+tabsHide();
+tabsShow(0);
    
 
 

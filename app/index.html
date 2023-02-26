@@ -29,7 +29,7 @@
             </div>
             <nav class="menu">
               <ul class="menu__list">
-                 <li class="">
+                 <li class="active">
                   <a href="#"> Реклама в Яндекс.Директе</a>
                 </li>
                 <li>
@@ -954,7 +954,7 @@
                 <p class="rates-block__item-text">РФ</p>
                 <p class="rates-block__item-desc">Отдельные кампании для регионов</p>
 
-                <a href="#" class="rates-block__item-btn">заказать</a>
+                <button class="rates-block__item-btn" data-modal>заказать</button>
               </div>
 
               <div class="rates-block__item two">
@@ -987,7 +987,7 @@
                 <p class="rates-block__item-text">Москва / СПб / РФ</p>
                 <p class="rates-block__item-desc">Отдельные кампании для регионов</p>
 
-                <a href="#" class="rates-block__item-btn">заказать</a>
+                <button class="rates-block__item-btn" data-modal>заказать</button>
               </div>
 
               <div class="rates-block__item three">
@@ -1020,7 +1020,7 @@
                 <p class="rates-block__item-text">Отдельные кампании для регионов</p>
                 <p class="rates-block__item-desc">Отдельные кампании для регионов</p>
 
-                <a href="#" class="rates-block__item-btn">заказать</a>
+                <button class="rates-block__item-btn" data-modal>заказать</button>
               </div>
             </div>
           </div>
@@ -1142,7 +1142,7 @@
         </div>
 
 
-        <div class="announcement">
+        <!-- <div class="announcement">
           <div class="container">
             <h2 class="announcement__title title">
               Где клиенты увидят ваше объявление
@@ -1157,6 +1157,31 @@
                   </div>
                 </div>
               </div>
+          </div>
+        </div> -->
+        <div class="announcement">
+          <div class="container">
+            <div class="announcement-tabs">
+              <div class="announcement-tabs__item">
+                <button class="announcement-tabs__item-btn">
+                  На первых позициях в поиске Яндекса и Google
+                </button>
+                <button class="announcement-tabs__item-btn">
+                  На сотнях сайтов-партнеров рекламной сети Яндекса (РСЯ) и Google (КМС)
+                </button>
+              </div>
+              
+              <div class="announcement-tabs__content">
+                <div class="announcement-tabs__content-img">
+                  <img src="./images/home/announcement-bg.jpg" alt="img">
+                </div>
+              </div>
+              <div class="announcement-tabs__content">
+                <div class="announcement-tabs__content-img">
+                  <img src="./images/home/clients/clients-play-1.png" alt="img">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -1396,8 +1421,8 @@
                 </p>
   
                 <form class="advertising-form form">
-                    <input type="text" class="form__input" placeholder="Введите ваше имя" required>
-                    <input type="text" class="form__input" placeholder="Введите ваш телефон" required>
+                    <input  type="text" name="text" class="form__input" placeholder="Введите ваше имя" required  pattern="\S+@[a-z]+.[a-z]+" maxlength="10">
+                    <input id="input-mask2" type="text" class="form__input" placeholder="Введите ваш телефон" required>
                     <button class="form__btn">Оставить заявку</button>
                 </form>
   
@@ -1447,38 +1472,21 @@
          <div class="footer-block__item-wrapper">
           <div class="footer-block__item">
             <div class="footer-block__item-title">Контакты</div>
-            <p class="footer-block__item-text">г. Москва</p>
+            <div class="footer__social">
+              <a href="#">
+                <img src="./images/home/icon/footer-vk.svg" alt="img">
+              </a>
+              <a href="#">
+                <img src="./images/home/icon/footer-telegram.svg" alt="img">
+              </a>
+              <a href="#">
+                <img src="./images/home/icon/footer-whatsapp.svg" alt="img">
+              </a>
+            </div>
+            <!-- <p class="footer-block__item-text">г. Москва</p> -->
             <a href="tel:+79000000000" class="footer-block__item-text">+7 900 000-00-00</a>
             <a href="maito:kontekstolog@mail.ru" class="footer-block__item-text">kontekstolog@mail.ru</a>
           </div>
-
-          <div class="footer-block__item">
-            <div class="footer-block__item-title">Пишите</div>
-            <div class="footer-block__item-social">
-              <p class="footer-block__item-social-text">
-                Соцсети:
-              </p>
-              <div class="footer-block__item-social-link">
-                  <a href="#">
-                    <img src="./images/home/icon/footer-vk.svg" alt="img">
-                  </a>
-              </div>
-            </div>
-            <div class="footer-block__item-social">
-              <p class="footer-block__item-social-text">
-                Мессенджеры:
-              </p>
-              <div class="footer-block__item-social-link">
-                <a href="#">
-                  <img src="./images/home/icon/footer-telegram.svg" alt="img">
-                </a>
-                <a href="#">
-                  <img src="./images/home/icon/footer-whatsapp.svg" alt="img">
-                </a>
-              </div>
-            </div>
-          </div>
-
           <div class="footer-block__item">
             <div class="footer-block__item-title">Разделы</div>
             <ul class="footer__menu">
@@ -1490,6 +1498,22 @@
               </li>
               <li>
                 <a href="#">Мои кейсы</a>
+              </li>
+            </ul>
+          </div>
+
+          
+          <div class="footer-block__item">
+            <div class="footer-block__item-title">Популярное</div>
+            <ul class="footer__menu">
+              <li>
+                <a href="#">Как настроить маркетинг</a>
+              </li>
+              <li>
+                <a href="#">Как увеличить прибыль</a>
+              </li>
+              <li>
+                <a href="#">Что то ещё</a>
               </li>
             </ul>
           </div>

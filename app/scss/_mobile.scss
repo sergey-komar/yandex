@@ -133,9 +133,6 @@
 
 
 @media(max-width:768px){
-    .header-bottom__contact-phone{
-        display: none;
-    }
     .title{
         padding: 1rem;
         line-height: 3.8rem;
@@ -410,6 +407,15 @@
     .aside__tags{
         flex-wrap: wrap;
         overflow-x: auto;
+    }
+    .accardion__item-title::after{
+        right: -57px;
+    }
+    .main{
+        margin-top: 8rem;
+    }
+    .header-bottom__contact-phone{
+        font-size: 14px;
     }
 
 
