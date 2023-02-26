@@ -128,16 +128,21 @@ accordionItemHeaders.forEach(acc => {
 });
 
 
-
+var element1 = document.getElementById('input-mask1');
 var element2 = document.getElementById('input-mask2');
 
 var maskOptions = {
 	mask: '+{7}(000)000-00-00',
 };
-
-
+var mask1 = IMask(element1, maskOptions);
 var mask2 = IMask(element2, maskOptions);
 
+
+let input = document.querySelector('.input1');
+input.maxLength = '10';
+input.addEventListener('input',()=> {
+    input.value = input.value.replace(/[^А-я,A-z]/,'');
+});
 
 
 //MODAL
